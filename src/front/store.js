@@ -1,7 +1,9 @@
 export const initialStore=()=>{
   return{
-    message: null,
-    todos: [
+    token:null
+    isLoginSuccessful: false,
+  }
+}
       {
         id: 1,
         title: "Make the bed",
