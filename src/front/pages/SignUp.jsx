@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import useGlobalReducer from "../hooks/useGlobalReducer";
 import { signup } from "../fetch";
 
-export const Login = () => {
+export const SignUp = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();

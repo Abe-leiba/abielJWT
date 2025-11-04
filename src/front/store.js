@@ -27,6 +27,16 @@ export default function storeReducer(store, action = {}) {
         isSignUpSuccessful: isSignUpSuccessful,
         }
     }
+    case "logout": 
+    {
+      return{
+        ...store, 
+        token: null,
+    isLoginSuccessful: false,
+    message: '',
+    isSignUpSuccessful: false
+      }
+    }
     default:
       throw Error('unknown action.');
   }
